@@ -2,7 +2,7 @@
 
 This project automates the pixelation of uploaded images into various resolutions. When a user uploads an image to a designated S3 bucket, an AWS Lambda function is triggered. This function processes the image, generating multiple pixelated versions (e.g., 64x64, 48x48, 32x32, etc.), and then uploads these processed images to a separate output S3 bucket.
 
-
+![Architecture Diagram](https://github.com/pyaesoekyaw/serverless-image-bluring/blob/main/images/circuit%20diagram..png)
 
 ### Deployment Steps
 
