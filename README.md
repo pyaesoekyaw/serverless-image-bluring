@@ -33,7 +33,7 @@ Follow these steps to set up and deploy the Image Pixelation Project:
 
     3.1. **Replace Python Code:**
     * Once the function is created, scroll down to the "Code source" section.
-    * Upload your Lambda function code to replace the default code.
+    * Upload your Lambda function [code](https://github.com/pyaesoekyaw/serverless-image-bluring/blob/main/lambda_python.py) to replace the default code.
 
     3.2. **Edit Timeout:**
     * Go to the "Configuration" tab of your Lambda function.
@@ -52,7 +52,7 @@ Follow these steps to set up and deploy the Image Pixelation Project:
     * Go to the Lambda console, click "Layers" on the left navigation, then "Create layer".
     * For "Name", provide a name (e.g., `image-processing-libraries`).
     * For "Description", add a brief description.
-    * Click "Upload a .zip file" and upload your `libraries_layer.zip` file from the (repo).
+    * Click "Upload a .zip file" and upload your [python.zip](https://github.com/pyaesoekyaw/serverless-image-bluring/tree/main/Layer_file).
     * For "Compatible runtimes", select `Python 3.9`.
     * For "Compatible architectures", select `arm64`.
     * Click "Create".
@@ -70,7 +70,7 @@ Follow these steps to set up and deploy the Image Pixelation Project:
     * Go to the IAM console.
     * Click "Roles" on the left navigation and search for the role created for your Lambda function (e.g., `image-pixelator-function-role-xxxxxxxx`).
     * Under the "Permissions" tab, click "Add permissions" then "Create inline policy".
-    * Select "JSON" tab and paste the (policies)[].
+    * Select "JSON" tab and paste the [policies](https://github.com/pyaesoekyaw/serverless-image-bluring/blob/main/lambda-role-policy.txt).
     * Click "Review policy", give it a name (e.g., `S3AccessForPixelator`), and click "Create policy".
 
 5.  **Configure S3 Trigger for Lambda:**
@@ -91,4 +91,4 @@ Once the setup is complete, using the project is straightforward:
 
 
 This project is referenced by Yeshwanthlm.
-reference repo link : (github repository)[https://github.com/yeshwanthlm/image-pixelater-aws-project]
+reference repo link : [github repository](https://github.com/yeshwanthlm/image-pixelater-aws-project)
